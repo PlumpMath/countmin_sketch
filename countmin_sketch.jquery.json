@@ -1,0 +1,28 @@
+{
+  "name": "countmin_sketch",
+  "title": "Count-Min Sketch",
+  "description": "This is a javascript implementation of the count-min sketch algorithm. It creates a dummy datastream and feeds it into the count-min sketch algorithm.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/KurtRMueller/countmin_sketch",
+  "author": {
+    "name": "Kurt Mueller",
+    "email": "kurtronaldmueller@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KurtRMueller/countmin_sketch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KurtRMueller/countmin_sketch/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/KurtRMueller/countmin_sketch/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}
