@@ -22,36 +22,44 @@
       raises(block, [expected], [message])
   */
 
-  module('jQuery#awesome', {
+  module('jQuery#dataStreamArray', {
     setup: function() {
       this.elems = $('#qunit-fixture').children();
     }
+  });
+
+  test('is available on the jq object', 1, function() {
+    ok($.fn.dataStreamArray(), "should be accessible on a collection");
   });
 
   test('is chainable', 1, function() {
     // Not a bad test to run on collection methods.
-    strictEqual(this.elems.awesome(), this.elems, 'should be chaninable');
+    strictEqual(this.elems.dataStreamArray(), this.elems, 'plugin should be chainable');
   });
 
-  test('is awesome', 1, function() {
-    strictEqual(this.elems.awesome().text(), 'awesomeawesomeawesome', 'should be thoroughly awesome');
-  });
+  // test('getters work correctly', 1, function() {
+  //   strictEqual(this.elems.dataStreamArray().getRows(), 5, 'should return 5 rows');
+  // });
 
-  module('jQuery.awesome');
+  // test('is awesome', 1, function() {
+  //   strictEqual(this.elems.awesome().text(), 'awesomeawesomeawesome', 'should be thoroughly awesome');
+  // });
 
-  test('is awesome', 1, function() {
-    strictEqual($.awesome(), 'awesome', 'should be thoroughly awesome');
-  });
+  // module('jQuery.awesome');
 
-  module(':awesome selector', {
-    setup: function() {
-      this.elems = $('#qunit-fixture').children();
-    }
-  });
+  // test('is awesome', 1, function() {
+  //   strictEqual($.awesome(), 'awesome', 'should be thoroughly awesome');
+  // });
 
-  test('is awesome', 1, function() {
-    // Use deepEqual & .get() when comparing jQuery objects.
-    deepEqual(this.elems.filter(':awesome').get(), this.elems.last().get(), 'knows awesome when it sees it');
-  });
+  // module(':awesome selector', {
+  //   setup: function() {
+  //     this.elems = $('#qunit-fixture').children();
+  //   }
+  // });
+
+  // test('is awesome', 1, function() {
+  //   // Use deepEqual & .get() when comparing jQuery objects.
+  //   deepEqual(this.elems.filter(':awesome').get(), this.elems.last().get(), 'knows awesome when it sees it');
+  // });
 
 }(jQuery));
